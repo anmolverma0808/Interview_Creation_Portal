@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Scheduler</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Interview Creation Portal</h1>
+            <li id="home">Home</li>
+        </nav>
+    </header>
+    <main>
+        <h2>Schedule a new Interview</h2>
+        <form>
+            <div class="start-time">
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime">
+            </div>
+            <div class="end-time">
+                <label for="endTime">End Time:</label>
+                <input type="time" id="endTime">
+            </div>
+            <div class="participants">
+                <h2>Add a Participant</h2>
+                
+                <div class="row-b">
+                    <span><input type="checkbox" name="anmol" id="anmol" class="checkbox-data" value="anmol.0808@gmail.com"></span>
+                    <label for="anmol">anmol.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+                
+                <div class="row-b">
+                    <span><input type="checkbox" name="rahul" id="rahul" class="checkbox-data" value="rahul.0808@gmail.com"></span>
+                    <label for="rahul">rahul.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+                
+                <div class="row-b">
+                    <span><input type="checkbox" name="ayush" id="ayush" class="checkbox-data" value="ayush.0808@gmail.com"></span>
+                    <label for="ayush">ayush.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+                
+                <div class="row-b">
+                    <span><input type="checkbox" name="rohit" id="rohit" class="checkbox-data" value="rohit.0808@gmail.com"></span>
+                    <label for="rohit">rohit.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+
+                <div class="row-b">
+                    <span><input type="checkbox" name="ankit" id="ankit" class="checkbox-data" value="ankit.0808@gmail.com"></span>
+                    <label for="ankit">ankit.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+
+                <div class="row-b">
+                    <span><input type="checkbox" name="ashutosh" id="ashutosh" class="checkbox-data" value="ashutosh.0808@gmail.com"></span>
+                    <label for="ashutosh">ashutosh.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+
+                <div class="row-b">
+                    <span><input type="checkbox" name="abhay" id="abhay" class="checkbox-data" value="abhay.0808@gmail.com"></span>
+                    <label for="abhay">abhay.0808@gmail.com</label>
+                    <div class="clear-both"></div>
+                </div>
+
+            </div>
+
+            <p id="message"></p>
+            <button id="schedule">Schedule</button>
+        </form>
+
+        <h1 class="table-heading">Upcoming Interviews ...</h1>
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Start_time</th>
+                <th>End_time</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+        <section hidden class="update">
+            <h3>Enter New Time</h3>
+            <div class="start-time">
+                <label for="updateStartTime">Start Time:</label>
+                <input type="time" id="updateStartTime">
+            </div>
+            <div class="end-time">
+                <label for="updateEndTime">End Time:</label>
+                <input type="time" id="updateEndTime">
+            </div>
+            <button id="update-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
